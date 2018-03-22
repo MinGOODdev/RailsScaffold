@@ -8,6 +8,10 @@
 * bundle update
 * rails -v
 
+## HTML & JSON
+* HTML : 일반적인 상황에서 사용, .html.erb (ruby 코드를 사용할 수 있는 html의 형태)
+* JSON : 데이터의 표현 방법 중 하나 (api 사용할 때 자주 등장)
+
 ## 스캐폴드
 * rails g scaffold post title:string content:text
 
