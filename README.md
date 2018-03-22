@@ -20,6 +20,12 @@
 * @post = Post.new면 create action으로
 * @post = Post.find(params[:id])면 update action으로 알아서 보낸다.
 
+## flash
+* redirect 전후로만 데이터를 저장하고 싶을 때 현재 요청과 다음 요청에서만 정보 저장
+* flash[:아무 이름] = '넣고 싶은 메세지' 형식으로 사용
+* flash[:notice]는 성공
+* flash[:alert]는 경고, 실패
+* 각각 notice, alert로 그냥 사용할 수 있음
 
 ## rails 명령어
 * rake routes : 설정되어 있는 모든 라우트 확인
