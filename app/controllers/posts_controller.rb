@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  # show, edit, udpate, destroy 4가지 액션에 대해서 액션을 실행하기 전에
+  # set_post를 먼저 실행해라. (맨 아래 private method)
 
   # GET /posts
   # GET /posts.json
