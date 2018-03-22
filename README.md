@@ -11,6 +11,11 @@
 ## 스캐폴드
 * rails g scaffold post title:string content:text
 
+## form_for
+* 모델 객체 (post)가 신규 or 이미 저장 완료되었는지를 판단해 적절한 url로 안내한다.
+* @post = Post.new면 create action으로
+* @post = Post.find(params[:id])면 update action으로 알아서 보낸다.
+
 
 ## rails 명령어
 * rake routes : 설정되어 있는 모든 라우트 확인
