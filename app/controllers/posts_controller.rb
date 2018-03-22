@@ -70,7 +70,9 @@ class PostsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # Strong Parameter (받고 싶은 것만 받자!)
     def post_params
+      # params.require(모델 이름).permit(:속성1, :속성2)
       params.require(:post).permit(:title, :content)
     end
 end
